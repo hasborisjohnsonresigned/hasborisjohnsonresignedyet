@@ -1,6 +1,7 @@
 $(document).ready(() => {
     calculateTime();
     getFact();
+    getPhoto();
 })
 
 const calculateTime = () => {
@@ -25,12 +26,17 @@ const calculateTime = () => {
         $('.clock-wrapper .hours .digits').html(hours);
         $('.clock-wrapper .minutes .digits').html(minutes);
         $('.clock-wrapper .seconds .digits').html(seconds);
-
-        $('.length-of-term').css('visibility', 'visible');
     }, 1000)
 }
 
 const getFact = () => {
     const randomFact = facts[Math.floor(Math.random() * facts.length)];
     $('.random-fact').html(randomFact);
+}
+
+const getPhoto = () => {
+    const randomDigit = Math.floor(Math.random()*5);
+    const src = `./assets/photos/${randomDigit}.jpg`;
+
+    $('.random-image').append(`<img class="image" src="${src}"/>`);
 }
