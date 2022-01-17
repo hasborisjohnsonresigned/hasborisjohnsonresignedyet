@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script defer src="./assets/script.js"></script>
+    <script defer src="./assets/facts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./assets/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Has Boris Johnson Resigned Yet?</title>
 </head>
 <body>
-    Hello World!
+    <div class="page-content">
+        <div class="header">
+            <h2>Has Boris Johnson Resigned Yet?</h2>
+        </div>
+        <div class="resigned-or-not">No</div>
+        <div class="length-of-term">
+            <h2>Boris Johnson has been the Prime Minister of the United Kingdom for:</h2>
+            <div class="clock-wrapper">
+                <div class="years clock-component">
+                    <div class="digits">-</div>
+                    <div class="label">Years</div>
+                </div>
+                <div class="months clock-component">
+                    <div class="digits">-</div>
+                    <div class="label">Months</div>
+                </div>
+                <div class="weeks clock-component">
+                    <div class="digits">-</div>
+                    <div class="label">Weeks</div>
+                </div>
+                <div class="days clock-component">
+                    <div class="digits">-</div>
+                    <div class="label">Days</div>
+                </div>
+                <div class="hours clock-component">
+                    <div class="digits">-</div>
+                    <div class="label">Hours</div>
+                </div>
+                <div class="minutes clock-component">
+                    <div class="digits">-</div>
+                    <div class="label">Minutes</div>
+                </div>
+                <div class="seconds clock-component">
+                    <div class="digits">-</div>
+                    <div class="label">Seconds</div>
+                </div>
+            </div>
+        </div>
+        <div class="random-fact"></div>
+    </div>
 </body>
 </html>
