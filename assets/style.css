@@ -1,0 +1,19 @@
+.page-content {
+    text-align: center;
+}
+
+.length-of-term {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.clock-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.clock-component {
+    margin: 1em;
+}
